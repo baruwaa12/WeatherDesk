@@ -19,23 +19,9 @@ The eventual data provider and the exact variables available will be chosen duri
 
 ## Page mock-ups
 
-The interactive design file is [`weather-data-all-pages.html`](docs/design/weather-data-all-pages.html). It contains seven pages in one application shell. The screenshots are included here for quick review; they show sample interface content rather than live weather data.
+The interactive design file is [`weather-data-all-pages.html`](docs/design/weather-data-all-pages.html). It contains seven pages in one application shell. The screenshots are included here for quick review; they show sample interface content rather than live weather data. The page designs now use the dark blue colour scheme shown in the updated Home screen.
 
-### First hand-drawn sketches
-
-These are my first paper layouts for the Home and Forecast pages, Settings and Locations pages, and Historical Weather and Air Quality pages.
-
-#### Home and forecast
-
-![Hand-drawn home and forecast sketches](docs/design/hand-drawn-sketches/01-home-and-forecast.jpeg)
-
-#### Settings and locations
-
-![Hand-drawn settings and locations sketches](docs/design/hand-drawn-sketches/02-settings-and-locations.jpeg)
-
-#### Historical weather and air quality
-
-![Hand-drawn historical weather and air quality sketches](docs/design/hand-drawn-sketches/03-historical-and-air-quality.jpeg)
+I’ve left [`hand-drawn-sketches/`](docs/design/hand-drawn-sketches/) ready for photos of the paper sketches.
 
 ### Home
 
