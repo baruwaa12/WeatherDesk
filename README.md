@@ -19,37 +19,37 @@ The eventual data provider and the exact variables available will be chosen duri
 
 ## Page mock-ups
 
-The interactive design file is [`weather-data-all-pages.html`](docs/design/weather-data-all-pages.html). It contains seven pages in one application shell. The screenshots are included here for quick review; they show sample interface content rather than live weather data. The page designs now use the dark blue colour scheme shown in the updated Home screen.
+The latest live-radar designs are below and indexed in [Live Radar Design](docs/design/live-radar/README.md). These are visual mock-ups with sample data. They include the revised panel grouping and alignment, no global top location bar, and a simplified Air Quality Index card.
 
-I’ve left [`hand-drawn-sketches/`](docs/design/hand-drawn-sketches/) ready for photos of the paper sketches.
+The [interactive HTML mock-up](docs/design/weather-data-all-pages.html) is an earlier design and has not yet been updated to match these images. Original paper sketches are in [hand-drawn-sketches/](docs/design/hand-drawn-sketches/).
 
 ### Home
 
-![Home page mock-up](docs/design/screenshots/home.png)
+![Home mock-up](docs/design/live-radar/screenshots/home.jpg)
 
 ### Forecast
 
-![Forecast page mock-up](docs/design/screenshots/forecast.png)
+![Forecast mock-up](docs/design/live-radar/screenshots/forecast-live-radar.jpg)
 
 ### Historical weather
 
-![Historical weather page mock-up](docs/design/screenshots/historical.png)
+![Historical weather mock-up](docs/design/live-radar/screenshots/historical-weather.jpg)
 
 ### Air quality
 
-![Air quality page mock-up](docs/design/screenshots/air-quality.png)
+![Air quality mock-up](docs/design/live-radar/screenshots/air-quality.jpg)
 
 ### Saved data
 
-![Saved data page mock-up](docs/design/screenshots/saved-data.png)
+![Saved data mock-up](docs/design/live-radar/screenshots/saved-data.jpg)
 
 ### Locations
 
-![Locations page mock-up](docs/design/screenshots/locations.png)
+![Locations mock-up](docs/design/live-radar/screenshots/locations.jpg)
 
 ### Settings
 
-![Settings page mock-up](docs/design/screenshots/settings.png)
+![Settings mock-up](docs/design/live-radar/screenshots/settings.jpg)
 
 ## Planned implementation approach
 

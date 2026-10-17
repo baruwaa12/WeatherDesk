@@ -1,14 +1,37 @@
 # Live Radar Design
 
-A live-radar visual direction for WeatherDesk. The forecast page puts a precipitation map and playback timeline first, with current conditions, hourly rainfall and the 7-day outlook kept close by. The other screens carry the same navy and blue style, using maps where they add context and keeping location and saved-data management focused on their lists.
+Latest screen revisions — 17 October 2026.
 
-## Individual screen mock-ups
+These visual mock-ups use sample data. The shared top location bar has been removed. Forecast Explorer and both forecast summaries share one panel; Air Quality and Locations use the revised alignment. The Air Quality Index summary retains its status with the legend removed. Settings is included as a full-size screen.
 
-- [Home](screenshots/home.jpg)
-- [Forecast with live radar](screenshots/forecast-live-radar.jpg)
-- [Historical weather](screenshots/historical-weather.jpg)
-- [Air quality](screenshots/air-quality.jpg)
-- [Locations](screenshots/locations.jpg)
-- [Saved data](screenshots/saved-data.jpg)
+## Home
 
-The full generated page board is also kept as [a single overview image](screenshots/all-pages-board.jpg). These are visual concepts with sample data, not implemented or connected screens.
+![Home](screenshots/home.jpg)
+
+## Forecast
+
+![Forecast](screenshots/forecast-live-radar.jpg)
+
+## Historical weather
+
+![Historical weather](screenshots/historical-weather.jpg)
+
+## Air quality
+
+![Air quality](screenshots/air-quality.jpg)
+
+## Saved data
+
+![Saved data](screenshots/saved-data.jpg)
+
+## Locations
+
+![Locations](screenshots/locations.jpg)
+
+## Settings
+
+![Settings](screenshots/settings.jpg)
+
+## Earlier concept
+
+The [original overview board](screenshots/all-pages-board.jpg) is retained as an earlier concept; the individual images above are the current designs.
