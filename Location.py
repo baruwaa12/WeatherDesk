@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 # Location.py
 # Two classes:
 #   Location        = one saved place (name, country, map coordinates)
@@ -52,10 +55,52 @@ class Location:
 
 
 class LocationManager:
+
     """Holds all saved locations and lets you add / search / edit / remove them."""
 
     def __init__(self):
         self.locations = []  # starts empty; add() fills this list
+        self.file = Path("locations.json")
+
+
+    def save_locations(self):
+
+        # Convert each Location object into a dictionary for JSON storage.
+        data = [vars(location) for location in self.locations]
+
+        # Replace the file contents with the current collection.
+        with self.file.open("w") as saved_file
+        json.dump(data, saved_file, indent=4)
+
+    
+    def load_locations(self):
+          """Restore saved locations from the JSON file."""
+        
+        # On the first run, there may be no saved file.
+        if not self.file.exists():
+            return
+
+        with self.file.open("r") as saved_file:
+            data = json.load(saved_file)
+        
+        loaded_locations = []
+
+        # Rebuild Location objects from the saved dictionaries. 
+        for record in data:
+            location = Location(
+                record["ID"],
+                record["name"],
+                record["CName"],
+                record["CCode"],
+                record["lat"],
+                record["long"]
+            )
+            location.favourite = record.get("favourite", False)
+            loaded_locations.append(location)
+
+        # Update the manager once all records have been loaded.
+        self.locations = loaded_locations
+
 
     def add(self, location):
         # any(...) is True if even one existing item already uses this ID
@@ -151,3 +196,5 @@ if __name__ == "__main__":
     print("\nAfter removing location 2:")
     for location in manager.list_locations():
         print(location)
+
+
