@@ -69,17 +69,18 @@ class LocationManager:
         data = [vars(location) for location in self.locations]
 
         # Replace the file contents with the current collection.
-        with self.file.open("w") as saved_file
-        json.dump(data, saved_file, indent=4)
+        with self.file.open("w") as saved_file:
+            json.dump(data, saved_file, indent=4)
 
     
+
     def load_locations(self):
-          """Restore saved locations from the JSON file."""
-        
+        """Restore saved locations from the JSON file."""
+
         # On the first run, there may be no saved file.
         if not self.file.exists():
             return
-
+            
         with self.file.open("r") as saved_file:
             data = json.load(saved_file)
         
@@ -173,6 +174,7 @@ class LocationManager:
 # If another file does "import Location", the demo below is skipped.
 if __name__ == "__main__":
     manager = LocationManager()
+    manager.file = Path("test_locations.json")
 
     manager.add(Location(1, "London", "UK", "GBR", 51.52, -0.127))
     manager.add(Location(2, "Paris", "France", "FRA", 48.85, 2.35))
@@ -182,6 +184,7 @@ if __name__ == "__main__":
     print("All locations:")
     for location in manager.list_locations():
         print(location)
+        print(type(location))
 
     print("\nSearch results:")
     for location in manager.search("Paris"):
