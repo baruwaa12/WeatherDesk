@@ -26,4 +26,3 @@ class WeatherForecast:
         return response.json()
 
 
-        
