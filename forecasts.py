@@ -4,7 +4,7 @@ class WeatherForecast:
     def get_forecast(self, location):
         """Request today's hourly temperatures for a Location object."""
 
-        url = "httos://api.open-meteo.com/v1/forecast"
+        url = "https://api.open-meteo.com/v1/forecast"
 
         # Use the coordinates from the saved location.
         parameters = {

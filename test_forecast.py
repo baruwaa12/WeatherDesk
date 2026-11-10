@@ -1,12 +1,16 @@
+from pathlib import Path
 import sys
+from Location import Location
+
 print(sys.executable)
 
 import requests
+from Location import LocationManager
+from forecasts import WeatherForecast
 
 try:
 
-    location = manager.get(1)
-
+    location = Location(1, "London", "UK", "GBR", 51.52, -0.127)
 
     weather = WeatherForecast()
     forecast = weather.get_forecast(location)
